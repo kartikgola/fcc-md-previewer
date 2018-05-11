@@ -1,9 +1,8 @@
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Markdown Previewer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -15,17 +14,16 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1 class="text-center">Markdown Previewer</h1>
-    <main class="row">
-    <div class="left-pane col-12 col-sm-12 col-md-5 mr-md-auto">
-        <textarea class="md-input" [(ngModel)]="input" placeholder="{{mdSample}}">
+<div class="container-fluid">
+    <main class="row px-3 py-3 mx-0 h-100 justify-content-center">
+        <div class="pane left-pane col-12 col-md-5 mr-md-2 mr-lg-3">
+            <textarea class="md-input" [(ngModel)]="input" placeholder="{{mdSample}}">
             </textarea>
-    </div>
-
-    <div class="right-pane col-12 col-sm-12 col-md-5 ml-md-auto">
-        <div class="md-output" [innerHTML]="input | parsedMd">
         </div>
-    </div>
-</main>
+
+        <div class="pane right-pane col-12 col-md-5 ml-md-2 ml-lg-3">
+            <div class="md-output" [innerHTML]="input | parsedMd">
+            </div>
+        </div>
+    </main>
 </div>

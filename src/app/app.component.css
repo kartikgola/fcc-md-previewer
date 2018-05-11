@@ -1,4 +1,8 @@
 
+.container-fluid {
+    height: calc(100vh - 56px);
+}
+
 textarea {
     height: 100%;
     width: 100%;
@@ -7,10 +11,6 @@ textarea {
 
 textarea:focus {
     outline: none;
-}
-
-nav {
-    margin-bottom: 1rem;
 }
 
 .nav-link {
@@ -27,37 +27,22 @@ nav {
 .left-pane {
     border: 2px solid lightblue;
     padding: 0.5rem;
-    margin: 1rem;
-    min-height: 50%;
-    box-sizing: border-box;
-    min-height: 40vh;
 }
 
 .right-pane {
-    border: 2px solid lightgreen;
+    border: 2px dashed lightgreen;
     padding: 0.5rem;
-    margin: 1rem;
-    min-height: 50%;
-    box-sizing: border-box;
-    min-height: 40vh;
 }
 
-@media screen and (min-height: 300px) and (max-height: 900px) {
-    .left-pane {
-        min-height: 30vh;
-    }
-
-    .right-pane {
-        min-height: 30vh;
-    }
+.md-output {
+    height: 100%;
 }
 
-@media screen and (min-height: 901px) {
-    .left-pane {
-        min-height: 40vh;
+@media (min-width: 1200px) { 
+    /* .left-pane {
+        margin-right: -1rem;
     }
-
     .right-pane {
-        min-height: 40vh;
-    }
+        margin-left: -1rem;
+    } */
 }

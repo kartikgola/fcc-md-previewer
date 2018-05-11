@@ -8,9 +8,9 @@ declare let marked: any;
 export class ParsedMdPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    if ( value.length > 0 )
+    if (value.length > 0)
       return marked(value);
     return '';
-    }
+  }
 
 }
